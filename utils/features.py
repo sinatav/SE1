@@ -26,5 +26,4 @@ def save_csv(data, name):
 
 
 def display_dataframe(data):
-    df = pd.DataFrame(data)
-    display(df)
+    display(pd.DataFrame(data))
