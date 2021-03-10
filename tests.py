@@ -1,6 +1,6 @@
 from utils.connections import connect, get_decoded_data
 from utils.dataCleaning import *
-from utils.features import save_csv
+from utils.features import save_csv, display_dataframe
 
 base_url = 'https://search.codal.ir/api/search/v1/'
 tag = 'companies'
@@ -21,3 +21,4 @@ print_cleaned_(data)
 
 save_csv(data, "test")
 
+display_dataframe(data)

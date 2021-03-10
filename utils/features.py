@@ -1,3 +1,5 @@
+from IPython.display import display
+import pandas as pd
 import csv
 
 
@@ -22,3 +24,7 @@ def save_csv(data, name):
         dict_writer.writeheader()
         dict_writer.writerows(data)
 
+
+def display_dataframe(data):
+    df = pd.DataFrame(data)
+    display(df)
