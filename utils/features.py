@@ -21,3 +21,4 @@ def save_csv(data, name):
         dict_writer = csv.DictWriter(output, data[0].keys())
         dict_writer.writeheader()
         dict_writer.writerows(data)
+
