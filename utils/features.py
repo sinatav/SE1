@@ -8,4 +8,6 @@ def show_data_raw(data):
         print()
 
 
-
+def show_dict_data(data):
+    for i in data:
+        print(i)
