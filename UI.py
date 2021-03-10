@@ -9,6 +9,9 @@ if con == 1:
     print("data is crawling from source destination:")
     data = get_decoded_data(connect(url))
     print("data is saved in a dict form")
+    op1 = int(input("wanna clean data?\n1. yes\t2. no\n"))
+    if op1 == 1:
+        data = clean_data(data)
     op1 = int(input("wanna see raw data or in a dict form?\n1. raw\t2. dict\n"))
     if op1 == 1:
         show_data_raw(data)
@@ -17,5 +20,3 @@ if con == 1:
 
 else:
     exit("BYEEEEE!")
-
-
