@@ -1,5 +1,6 @@
 import csv
 
+
 def show_data_raw(data):
     for L in list(data[0].keys()):
         print(L, end='\t')
