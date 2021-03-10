@@ -7,5 +7,9 @@ def show_data_raw(data):
             print(J, end='\t')
         print()
 
-
+def save_csv(data, name):
+    with open(name + '.csv', 'w', newline='') as output:
+        dict_writer = csv.DictWriter(output, data[0].keys())
+        dict_writer.writeheader()
+        dict_writer.writerows(data)
 
