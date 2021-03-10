@@ -17,6 +17,10 @@ if con == 1:
         show_data_raw(data)
     elif op1 == 2:
         show_dict_data(data)
+    op1 = int(input("wanna save csv?\n1. yes\t2. no\n"))
+    if op1 == 1:
+        name = input("what will be the name of your file?\n")
+        save_csv(data, name)
 
 else:
     exit("BYEEEEE!")
